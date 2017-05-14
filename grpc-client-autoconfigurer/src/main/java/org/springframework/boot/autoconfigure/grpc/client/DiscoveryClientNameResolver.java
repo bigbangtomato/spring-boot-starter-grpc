@@ -74,7 +74,7 @@ public class DiscoveryClientNameResolver extends NameResolver {
     initRefresher();
 	}
 
-  @Scheduled(fixedRate = 20000)
+  @Scheduled(fixedDelay = 20000)
   @Override
   public void refresh() {
     System.out.println("update service instance info ###############################################");
